@@ -56,9 +56,21 @@ menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva
 "Seu nome é normal"; maior que 6 escreva "Seu nome é muito grande". 
 """
 
+primeiro_nome = input('Digite seu primeiro nome: ')
 
+TAM_NOME_CURTO =  4 
+TAM_NOME_NORMAL = 5
+TAM_NOME_GRANDE = 6 
 
+tamanho_nome = len(primeiro_nome)
 
-    
+nome_curto  = tamanho_nome <= TAM_NOME_CURTO
+nome_normal = TAM_NOME_GRANDE > tamanho_nome >= TAM_NOME_NORMAL
+nome_grande = tamanho_nome >= TAM_NOME_GRANDE
 
-
+if nome_curto : 
+    print("Seu nome é curto") 
+elif nome_normal :
+    print("Seu nome é normal") 
+elif nome_grande : 
+    print("Seu nome é grande") 
